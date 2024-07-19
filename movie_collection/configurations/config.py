@@ -1,7 +1,7 @@
 from datetime import timedelta
 
 SIMPLE_JWT_SETTINGS = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=90),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,
@@ -22,3 +22,4 @@ SIMPLE_JWT_SETTINGS = {
     'JTI_CLAIM': 'jti',
 }
 
+THIRD_PARTY_API = 'https://demo.credy.in/api/v1/maya/movies/'
